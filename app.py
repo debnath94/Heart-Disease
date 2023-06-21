@@ -37,7 +37,7 @@ elif cp == "Variant":
     cp = 4
 
 
-trestbps = st.slider(":blue[Select your Resting Blood Pressure]", 90, 200, 105)
+trestbps = st.number_input(":Select your Resting Blood Pressure", value=0)
 
 
 chol = st.number_input("Select Your Cholestrol Level", value=0)
@@ -68,7 +68,7 @@ else:
     exang = 0
 
 
-oldpeak = st.slider(":blue[Select Your Depression Level]", 0.0, 6.2,2.0)
+oldpeak = st.number_input("Select Your Depression Level", value=0)
 
 
 slope = st.radio(":blue[Select the Slope Type]", ["Upsloping", "Flat","Downsloping"])
@@ -80,7 +80,7 @@ elif slope == "Downsloping":
     slope = 3
 
 
-ca = st.slider(":blue[Select the Major Vessels]", 1,3, 2)
+ca = st.number_input("[Select the Major Vessels]", value=0)
 
 
 thal = st.radio(":blue[Select The Thalassemia Level]", ["Normal", "Reversable Defect", "Fixed Defect"])
