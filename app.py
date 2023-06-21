@@ -37,10 +37,10 @@ elif cp == "Variant":
     cp = 4
 
 
-trestbps = st.input(":blue[Select your Resting Blood Pressure]", 90, 200, 105)
+trestbps = st.slider(":blue[Select your Resting Blood Pressure]", 90, 200, 105)
 
 
-chol = st.input(":blue[Select Your Cholestrol Level]", 250, 540, 300)
+chol = st.slider(":blue[Select Your Cholestrol Level]", 250, 540, 300)
 
 
 fbs = st.radio(":blue[Fasting Blood Sugar]", ["Yes", "No"])
@@ -59,7 +59,7 @@ elif restecg == "High":
     restecg = 2
 
 
-thalach = st.input(":blue[Select Your Max Heart Rate]", list(range(0, 201, 25)))
+thalach = st.radio(":blue[Select Your Max Heart Rate]", list(range(0, 201, 25)))
 
 
 exang = st.radio(":blue[Select Excercise Induced Angina]", ["Yes", "No"])
@@ -69,7 +69,7 @@ else:
     exang = 0
 
 
-oldpeak = st.input(":blue[Select Your Depression Level]", 0.0, 6.2,2.0)
+oldpeak = st.slider(":blue[Select Your Depression Level]", 0.0, 6.2,2.0)
 
 
 slope = st.radio(":blue[Select the Slope Type]", ["Upsloping", "Flat","Downsloping"])
@@ -81,7 +81,7 @@ elif slope == "Downsloping":
     slope = 3
 
 
-ca = st.input(":blue[Select the Major Vessels]", 1,3, 2)
+ca = st.slider(":blue[Select the Major Vessels]", 1,3, 2)
 
 
 thal = st.radio(":blue[Select The Thalassemia Level]", ["Normal", "Reversable Defect", "Fixed Defect"])
