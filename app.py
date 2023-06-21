@@ -59,8 +59,7 @@ elif restecg == "High":
     restecg = 2
 
 
-thalach = st.radio(":blue[Select Your Max Heart Rate]", list(range(0, 201, 25)))
-
+thalach = st. number_input("Select Your Max Heart Rate", value = 0)
 
 exang = st.radio(":blue[Select Excercise Induced Angina]", ["Yes", "No"])
 if exang == "Yes":
