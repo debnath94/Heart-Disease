@@ -101,10 +101,10 @@ if st.button('Predict'):
     prediction = lr.predict(query_point_transformed)
     if prediction == 0:
         st.success("You don't have a Heart Disease 😊!")
-        st.image('images/happy_heart.jfif')
+        st.image('happy_heart.jfif')
     else:
         st.error("You have a Heart Disease 😥!")
-        st.image('images/damaged_heart.jfif')
+        st.image('damaged_heart.jfif')
         
 
     
