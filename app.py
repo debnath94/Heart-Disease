@@ -40,7 +40,7 @@ elif cp == "Variant":
 trestbps = st.slider(":blue[Select your Resting Blood Pressure]", 90, 200, 105)
 
 
-chol = st.slider(":blue[Select Your Cholestrol Level]", 250, 540, 300)
+chol = st.number_input("Select Your Cholestrol Level", value=0)
 
 
 fbs = st.radio(":blue[Fasting Blood Sugar]", ["Yes", "No"])
