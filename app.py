@@ -17,7 +17,7 @@ lr = load(open('lr_model.pkl', 'rb'))
 st.title(":red[Heart Disease Prediction]")
 
 
-age = st.slider(":blue[Select Your Age]",21, 80, 30 )
+age = st.input(":blue[Select Your Age]",21, 80, 30 )
 
 sex = st.radio(":blue[Select Your Gender]", ["Male", "Female"])
 if sex == "Male":
